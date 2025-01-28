@@ -1,0 +1,45 @@
+InitLoop
+========
+
+
+go test -bench=InitLoop  -benchtime=100000x -count=10 .
+goos: darwin
+goarch: arm64
+pkg: github.com/aquasecurity/trivy-benchmarks/init-checks
+cpu: Apple M1 Pro
+Benchmark_InitLoop-10             100000                63.59 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                59.00 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                60.30 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                58.55 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                57.71 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                57.25 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                56.81 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                59.34 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                56.14 ns/op           48 B/op          1 allocs/op
+Benchmark_InitLoop-10             100000                56.82 ns/op           48 B/op          1 allocs/op
+PASS
+ok      github.com/aquasecurity/trivy-benchmarks/init-checks    0.702s
+
+
+LoadRegisterLoop
+================
+
+ go test -v -bench=LoadRegisterLoop -benchtime=100000x -count=10 .
+goos: darwin
+goarch: arm64
+pkg: github.com/aqusecurity/simar7/trivy-benchmarks/load-and-register
+cpu: Apple M1 Pro
+Benchmark_LoadRegisterLoop
+Benchmark_LoadRegisterLoop-10             100000                56.70 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                58.09 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                54.95 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                57.54 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                55.89 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                57.62 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                57.75 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                57.02 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                55.22 ns/op           48 B/op          1 allocs/op
+Benchmark_LoadRegisterLoop-10             100000                58.16 ns/op           48 B/op          1 allocs/op
+PASS
+ok      github.com/aqusecurity/simar7/trivy-benchmarks/load-and-register        0.932s
+

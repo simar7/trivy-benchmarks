@@ -1,0 +1,2 @@
+PASS
+ok  	github.com/aquasecurity/trivy-benchmarks/init-checks	0.630s
